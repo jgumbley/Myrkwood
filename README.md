@@ -9,5 +9,5 @@ Intent
 
 As a product owner,
 I want a repeatable process, supported by a tool,
-So that I can identify the scope of security work
-And prioritise it appropriately
+so that I can identify the scope of security work
+and prioritise it appropriately.
