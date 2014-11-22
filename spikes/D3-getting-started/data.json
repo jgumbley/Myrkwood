@@ -1,7 +1,12 @@
 {
  "name": "open safe",
  "children": [
-  { "name": "steal key" },
-  { "name": "blast with dynamite" }
+  { "name": "steal key",
+    "children": [
+      { "name": "beat up guard" },
+      { "name": "steal in night" }
+    ]
+  },
+  { "name": "dynamite blast" }
  ]
 }
