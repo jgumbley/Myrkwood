@@ -17,3 +17,6 @@ and prioritise it appropriately.
 "some tools that someone could use in five or ten minutes that may not make the analysis perfect but will improve it substantially."
 
 "attack trees can model an adversary’s behavior with respect to a target, and how an assessment of risk can be performed"
+
+"The root node represents the main goal of the attack, while the successor nodes represent ways
+to reach the main goal."
