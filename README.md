@@ -20,3 +20,6 @@ and prioritise it appropriately.
 
 "The root node represents the main goal of the attack, while the successor nodes represent ways
 to reach the main goal."
+
+Protective countermeasures should be applied evenly across the landscape to prevent the attacks that pose
+the greatest threat. 
