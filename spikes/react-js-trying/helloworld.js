@@ -1,6 +1,6 @@
 var data = [
   {author: "George Bush", text: "Yo blair"},
-  {author: "Jordan Walke", text: "Hey George"}
+  {author: "Tony Blair", text: "Hey George"}
 ];
 
 var Comment = React.createClass({
