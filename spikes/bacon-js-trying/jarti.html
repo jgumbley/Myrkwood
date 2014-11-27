@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Bacon.js example</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/baconjs/bacon.js/master/dist/Bacon.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/baconjs/bacon.model/master/dist/bacon.model.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/baconjs/bacon.jquery/master/dist/bacon.jquery.min.js"></script>
+    <script type="text/javascript">
+        function nonEmpty(s) { return s.length > 0 }
+        $(function(){
+            var nameEntered = Bacon.$.textFieldValue($("#name input")).map(nonEmpty);
+            var ageEntered = Bacon.$.textFieldValue($("#age input")).map(nonEmpty);
+            var buttonEnabled = nameEntered.and(ageEntered);
+            buttonEnabled.not().assign($("#submitButton button"), "attr", "disabled");
+        })
+    </script>
+</head>
+<body>
+    <span id="yourname"></span>
+    <div id="name">
+        <input type="text">
+    </div>
+    <div id="age">
+        <input type="text">
+    </div>
+    <div id="submitButton"><button>Submit</button></div>
+</body>
+</html>
