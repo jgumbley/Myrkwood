@@ -1,13 +1,10 @@
-describe('the reactive wiring', function() {
-  it('updates a label whenever that slider changes', function () {
+describe('our reactive wiring', function() {
+  return it('updates this label whenever that slider changes', function() {
+    var $label, $slider;
     $slider = $('<input type="range" min="0" max="100" value="50"/>');
     $label = $('<div/>');
-
-    wireUpSliderToLabel( $slider, $label );
-
+    wireUpSliderToLabel($slider, $label);
     $slider.val(22).trigger("input");
-
-    expect($label.text()).to.equal("22");
+    expect($label.text()).toEqual("22");
   });
 });
-
