@@ -16,6 +16,11 @@ venv/bin/activate:
 	. $(in_venv); pip install -r requirements.txt
 	$(call green,"[Making venv successful]")
 
+.PHONY: webserver
+webserver:
+	$(call green,"[Running webserver]")
+	python -m SimpleHTTPServer
+
 .PHONY: clean
 clean:
 	rm -Rf venv
