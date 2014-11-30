@@ -1,5 +1,7 @@
 src_files:
-  - js/*.js
+  - js/jquery.js
+  - js/bacon.js
+  - js/reactive.js
 
 stylesheets:
 
