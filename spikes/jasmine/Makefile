@@ -4,7 +4,7 @@ endef
 
 .PHONY: default¬
 default: venv
-	. $(in_venv) jasmine-ci
+	. $(in_venv) jasmine-ci --browser firefox
 	$(call green,"[All steps successful]")
 
 in_venv=venv/bin/activate
