@@ -2,6 +2,8 @@ src_files:
   - js/jquery.js
   - js/bacon.js
   - js/reactive.js
+  - js/arboreal.js
+  - js/ancient-oak.js
   - js/model.js
 
 stylesheets:
