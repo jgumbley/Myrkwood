@@ -23,13 +23,25 @@ describe("Table of threats", function() {
     // given
     mtree = {branch1: 1, 
             branch2: [{twig1: 2}, {twig2: 3}]
-            }
+            };
     // when
     itree = I(mtree);
     // then
-    expect(mtree.branch1).toBe(1);
-    expect(mtree.branch2[0].twig1).toBe(2);
-    expect(mtree.branch2[1].twig2).toBe(3);
+    expect(itree("branch1")).toBe(1);
+    expect(itree("branch2")(0)("twig1")).toBe(2);
+    expect(itree("branch2")(1)("twig2")).toBe(3);
 
   });
+  it("can update immutable tree", function() {
+    // given
+    var itree = I({branch1: 1, 
+            branch2: [{twig1: 2}, {twig2: 3}]
+            });
+    // when
+    var i2tree = itree.set("branch1", 4);
+    // then
+    expect(i2tree("branch1")).toBe(4);
+
+  });
+
 });
