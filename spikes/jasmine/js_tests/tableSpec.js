@@ -19,4 +19,17 @@ describe("Table of threats", function() {
     expect(tree.branch2[1].twig2).toBe(3);
 
   });
+  it("can make a fancy immutable tree", function() {
+    // given
+    mtree = {branch1: 1, 
+            branch2: [{twig1: 2}, {twig2: 3}]
+            }
+    // when
+    itree = I(mtree);
+    // then
+    expect(mtree.branch1).toBe(1);
+    expect(mtree.branch2[0].twig1).toBe(2);
+    expect(mtree.branch2[1].twig2).toBe(3);
+
+  });
 });
