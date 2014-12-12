@@ -1,0 +1,17 @@
+src_files:
+  - js/jquery.js
+  - js/bacon.js
+  - js/reactive.js
+  - js/ancient-oak.js
+
+stylesheets:
+
+helpers:
+  - "helpers/**/*.js"
+
+spec_files:
+  - "**/*[Ss]pec.js"
+
+src_dir:
+
+spec_dir: js_tests/
