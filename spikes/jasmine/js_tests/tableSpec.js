@@ -3,7 +3,8 @@ describe("Table of threats", function() {
     // given
     threat = {name: "steal money"};
     // when
+    threats = [ threat ];
     // then
-    expect(threat.name).toBe("steal money");
+    expect(threats[0].name).toBe("steal money");
   });
 });
