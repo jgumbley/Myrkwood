@@ -38,9 +38,11 @@ describe("Table of threats", function() {
             branch2: [{twig1: 2}, {twig2: 3}]
             });
     // when
-    var i2tree = itree.set("branch1", 4);
+    itree = itree.set("branch1", 4);
+    itree = itree.patch({branch2: [{twig1:6}]});
     // then
-    expect(i2tree("branch1")).toBe(4);
+    expect(itree("branch1")).toBe(4);
+    expect(itree("branch2")(0)("twig1")).toBe(6);
 
   });
 
