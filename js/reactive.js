@@ -7,3 +7,4 @@ wireUpSliderToLabel = function($slider, $label) {
   });
   sliderEventStream.assign($label, "text");
 };
+

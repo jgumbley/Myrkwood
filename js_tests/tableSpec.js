@@ -45,5 +45,17 @@ describe("Table of threats", function() {
     expect(itree("branch2")(0)("twig1")).toBe(6);
 
   });
+  it("can map immutable to view", function() {
+    // given
+    var $tree = I({branch1: 1, 
+            branch2: [{twig1: 2}, {twig2: 3}]
+            });
+    var $label;
+    $label = $('<div/>');
+    // when
+    $label.text = $tree("branch1")
+    // then
+    expect($label.text).toBe(1);
+  });
 
 });
