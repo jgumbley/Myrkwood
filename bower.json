@@ -14,5 +14,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "ancient-oak": "~0.3.4",
+    "bacon": "~0.7.41"
+  }
 }
