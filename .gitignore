@@ -3,3 +3,4 @@ ghostdriver.log
 venv/
 bower_components/
 node_modules/
+lib/

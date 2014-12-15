@@ -4,6 +4,9 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    bower: {
+        install: { }
+      },
     jasmine: {
         yourTask: {
           src:['bower_components/jquery/dist/jquery.js',
@@ -20,9 +23,10 @@ module.exports = function(grunt) {
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-bower-concat');
 
   // Default task(s).
-  grunt.registerTask('default', ['jasmine']);
+  grunt.registerTask('default', ['bower:install', 'jasmine']);
 
 }
