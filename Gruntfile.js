@@ -6,7 +6,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     jasmine: {
         yourTask: {
-          src:['js/jquery.js','js/*.js'],
+          src:['bower_components/jquery/dist/jquery.js',
+               'bower_components/bacon/dist/Bacon.js',
+               'bower_components/ancient-oak/dist/ancient-oak-*min.js',
+               'js/*.js'
+               ],
           options: {
             specs: 'js_tests/*Spec.js',
           }
