@@ -4,16 +4,22 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    clean: ["js/libs.js", "bower_components/", "ghostdriver.log"],
     bower: {
         install: { }
       },
+    bower_concat: {
+        all: {
+            dest: 'js/libs.js',
+            cssDest: 'build/_bower.css',
+            dependencies: {
+              'bacon': 'jquery',
+            }
+          }
+        },
     jasmine: {
         yourTask: {
-          src:['bower_components/jquery/dist/jquery.js',
-               'bower_components/bacon/dist/Bacon.js',
-               'bower_components/ancient-oak/dist/ancient-oak-*min.js',
-               'js/*.js'
-               ],
+          src:[ 'js/*.js' ],
           options: {
             specs: 'js_tests/*Spec.js',
           }
@@ -21,12 +27,13 @@ module.exports = function(grunt) {
       }
   });
 
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-bower-concat');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task(s).
-  grunt.registerTask('default', ['bower:install', 'jasmine']);
+  grunt.registerTask('default', 
+    ['clean', 'bower:install', 'bower_concat', 'jasmine']);
 
 }

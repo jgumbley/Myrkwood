@@ -4,3 +4,4 @@ venv/
 bower_components/
 node_modules/
 lib/
+js/libs.js
