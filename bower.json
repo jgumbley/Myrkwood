@@ -18,6 +18,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "ancient-oak": "~0.3.4",
-    "bacon": "~0.7.41"
+    "bacon": "~0.7.41",
+    "bootstrap": "~3.3.1"
   }
 }

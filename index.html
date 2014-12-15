@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myrkwood</title>
+    <link rel="stylesheet" href="/css/libs.css">
+</head>
 <body>
-    <h1>Hello!</h1>
-    <hr/>
-    <section id="slider-v1">
-        <input type="range" max="100"/>
-        <span class="label">____</span>
-    </section>
-    <hr/>
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bacon.js"></script>
+    <div class="container">
+        <h1>Hello!</h1>
+        <hr/>
+        <section id="slider-v1">
+            <input type="range" max="100"/>
+            <hr/>
+            <span class="numbers">____</span>
+        </section>
+        <hr/>
+    </div>
+    <script src="/js/libs.js"></script>
     <script src="/js/reactive.js"></script>
     <script>
         var $label, $slider;
         $slider = $('#slider-v1 input');
-        $label = $('#slider-v1 .label');
+        $label = $('#slider-v1 .numbers');
         wireUpSliderToLabel($slider, $label);
     </script>
 </body>
-
+</html>

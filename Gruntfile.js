@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     bower_concat: {
         all: {
             dest: 'js/libs.js',
-            cssDest: 'build/_bower.css',
+            cssDest: 'css/libs.css',
             dependencies: {
               'bacon': 'jquery',
             }
