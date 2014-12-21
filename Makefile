@@ -4,8 +4,8 @@ endef
 
 .PHONY: tests
 tests:
-	grunt
-	$(call green,"[Running webserver]")
+	grunt jasmine
+	$(call green,"[Test Success]")
 
 .PHONY: webserver
 webserver:
