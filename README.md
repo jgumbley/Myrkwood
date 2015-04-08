@@ -23,21 +23,3 @@ to reach the main goal."
 
 Protective countermeasures should be applied evenly across the landscape to prevent the attacks that pose
 the greatest threat. 
-
-Trees
------
-
-There is some art to producing them.
-
-There may be some novel threats, perhaps take care to draw that out. Then there is something like a common attack profile for commercial websites, which can be used as a starting point for a threat briefing.
-
-* Steal money
-* Steal data
-* Steal products and services
-* Break stuff
-x
-* Script kids
-* Organised Criminal Gangs
-* Insiders
-
-From here start to draw out an attack tree.
